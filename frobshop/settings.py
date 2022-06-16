@@ -30,8 +30,11 @@ SECRET_KEY = 'django-insecure-_#1c39i=hhf(osc%+c(ud0p+51(d@c5o$x0q-4ue107()o_-pn
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+DOMAIN_AWS = os.environ.get("DOMAIN_AWS")
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    DOMAIN_AWS
+]
 
 
 # Application definition
